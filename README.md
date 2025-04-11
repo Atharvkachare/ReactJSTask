@@ -1,54 +1,64 @@
 # React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+   # User Details Dashboard - React & TypeScript
+ 
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Overview
 
-## Expanding the ESLint configuration
+This project features a three-panel layout including:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- 👥 User list panel
+- 📋 Detailed user profile view
+- 📞 Contact information via tab navigation
+- 🔐 Read-only data display
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## ✨ Features
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### 🧑‍💼 User Management
+- View list of users
+- Select a user to load detailed information
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+### 🧾 Profile Display
+- Name, Date of Birth, Address
+- Structured and formatted for readability
+
+### 📇 Contact Information
+- Displays Email, Phone, and Skype ID
+- Toggle via tabbed interface
+
+### 🎨 UI Components
+- Tab-based navigation
+- Clean, modern design using CSS
+
+---
+
+## 🛠️ Technologies Used
+
+- **React 18**
+- **TypeScript**
+- **CSS Modules**
+- **React Functional Components**
+- **React Hooks**
+- **Vite** (for project scaffolding)
+- **Fake APIs** (JSON Placeholder / Mocked data)
+
+---
+
+## 📂 Project Setup
+
+
+# Clone the repository
+git clone https://github.com/Atharvkachare/ReactJSTask.git
+
+# Navigate to the project directory
+cd ReactJSTask
+
+# Install dependencies
+npm install
+
+# Run the app
+npm run dev
